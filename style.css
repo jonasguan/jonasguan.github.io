@@ -1,0 +1,165 @@
+:root {
+  color-scheme: light;
+  --background: #fbfaf6;
+  --text: #151513;
+  --muted: #62605b;
+  --rule: #d8d3c7;
+  --placeholder: #f0ede5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.page {
+  width: min(670px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 72px 0 88px;
+}
+
+.intro {
+  margin-bottom: 34px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 0.96;
+}
+
+.portrait {
+  display: block;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  background: var(--placeholder);
+}
+
+.bio {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 58px;
+}
+
+.bio-intro {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  align-items: center;
+  gap: 34px;
+}
+
+.bio p {
+  margin: 0;
+}
+
+.intro-copy {
+  display: grid;
+  gap: 20px;
+}
+
+.email {
+  white-space: nowrap;
+}
+
+.publications {
+  border-top: 1px solid var(--rule);
+  padding-top: 26px;
+}
+
+h2 {
+  margin-bottom: 22px;
+  font-size: 1.08rem;
+  font-weight: 400;
+}
+
+.publication-list {
+  display: grid;
+  gap: 26px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.publication h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.publication-authors {
+  margin-top: 5px;
+  line-height: 1.45;
+}
+
+.publication-meta {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+a:hover {
+  color: var(--muted);
+}
+
+@media (max-width: 680px) {
+  html {
+    font-size: 17px;
+  }
+
+  .page {
+    width: min(100% - 32px, 670px);
+    padding: 44px 0 64px;
+  }
+
+  .intro {
+    margin-bottom: 32px;
+  }
+
+  .bio-intro {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .portrait {
+    width: min(280px, 74vw);
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .bio {
+    gap: 18px;
+    margin-bottom: 48px;
+  }
+
+  .intro-copy {
+    gap: 18px;
+  }
+}
