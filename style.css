@@ -119,6 +119,61 @@ h2 {
   line-height: 1.45;
 }
 
+.media {
+  border-top: 1px solid var(--rule);
+  padding-top: 26px;
+  margin-bottom: 40px;
+}
+
+.media-lede {
+  margin-bottom: 20px;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.media-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.media-list a {
+  display: block;
+}
+
+.media-list img {
+  display: block;
+  width: auto;
+  opacity: 0.75;
+  transition: opacity 0.15s ease;
+}
+
+.media-list a:hover img {
+  opacity: 1;
+}
+
+.logo-nyt {
+  height: 30px;
+}
+
+.logo-sciam {
+  height: 29px;
+}
+
+.logo-fortune {
+  height: 18px;
+}
+
+.logo-globe {
+  height: 23px;
+}
+
 a {
   color: inherit;
   text-decoration-thickness: 1px;
